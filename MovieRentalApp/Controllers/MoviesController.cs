@@ -13,7 +13,7 @@ namespace MovieRentalApp.Controllers
         public ActionResult Random()
         {
             var movie = new Movie() { Name = "Lego Movie" };
-            return View();
+            return View(movie);
         }
     }
 }
