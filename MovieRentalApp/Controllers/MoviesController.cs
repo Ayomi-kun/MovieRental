@@ -23,7 +23,8 @@ namespace MovieRentalApp.Controllers
 
             //return RedirectToAction("Index", "Home", new { page =1, sortBy= "name"});
         }
-
+        
+        //movies/edit?id
         public ActionResult Edit(int id)
         {
             return Content("id =" + id);
@@ -42,6 +43,11 @@ namespace MovieRentalApp.Controllers
                 sortBy = "Name";
             }
             return Content(String.Format("pageIndex={0}&sortBy={1}", pageIndex, sortBy));
+        }
+        //movies/byreleaseddate?year&month 
+        public ActionResult ByReleaseDate(int year, byte month)
+        {
+            return Content(String.Format("Movie release month and year = {0}/{1}", month,year));
         }
     }
 }
