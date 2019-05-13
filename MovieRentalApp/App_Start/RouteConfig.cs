@@ -16,7 +16,8 @@ namespace MovieRentalApp
             routes.MapRoute(
                 "MoviesByReleaseDate",
                 "movies/{action}/{year}/{month}",
-                new { controller="movies", action="ByReleaseDate"}
+                new { controller="movies", action="ByReleaseDate"},
+                new {year = @"\d{4}", month = @"\d{2}"}
                 );
 
             routes.MapRoute(
