@@ -10,20 +10,18 @@ namespace MovieRentalApp.Controllers
 {
     public class MoviesController : Controller
     {
-        // GET: Movies/Random
-        public ActionResult Random()
+        // GET: Movies/
+        public ActionResult Index()
         {
-            var movie = new Movie() { Name = "Lego Movie" };
-            var customers = new List<Customer>
-            {
-                new Customer {Name = "Tobi Dahunsi"},
-                new Customer {Name ="Olamide Jegede"},
-                new Customer {Name = "Niyi Obikoya"}
+            var movies = new List<Movie>
+            { new Movie { Name = "Lego Movie" },
+              new Movie {Name = "Avengers Endgame" },
+              new Movie {Name = "Titanic" },
+              new Movie {Name = "Iron Man" }
             };
             var ViewModel = new RandomMovieViewModel
             {
-                Movie = movie,
-                Customers = customers
+                Movie = movies
         };
 
             
@@ -38,14 +36,39 @@ namespace MovieRentalApp.Controllers
             //return RedirectToAction("Index", "Home", new { page =1, sortBy= "name"});
         }
         
+        public ActionResult Details(int id)
+        {
+            string movies;
+            if(id == 1)
+            {
+                movies = "Lego Movie";
+            }
+            else if(id == 2)
+            {
+                movies = "Avengers Endgame";
+            }
+            else if(id == 3)
+            {
+                movies = "Titanic";
+            }
+            else if(id == 4)
+            {
+                movies = "Iron man";
+            }
+            else
+            {
+                movies = "";
+            }
+            return Content(movies);
+        }
         //movies/edit?id
         public ActionResult Edit(int id)
         {
             return Content("id =" + id);
         }
 
-        //Movies
-        public ActionResult Index(int? pageIndex, string sortBy)
+        //Movies/page
+        public ActionResult page(int? pageIndex, string sortBy)
         {
             if (!pageIndex.HasValue)
             {

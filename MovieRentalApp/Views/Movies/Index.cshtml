@@ -1,0 +1,14 @@
+﻿@model MovieRentalApp.ViewModels.RandomMovieViewModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Movie</h2>
+@{ var num = 0;}
+@foreach (var movie in Model.Movie)
+{
+    num++;
+    <h5> @Html.ActionLink(movie.Name, "Details", "Movies", new { id = num }, null)</h5>
+}
+
