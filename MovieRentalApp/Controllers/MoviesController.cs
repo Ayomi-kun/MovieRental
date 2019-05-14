@@ -59,8 +59,8 @@ namespace MovieRentalApp.Controllers
             return Content(String.Format("pageIndex={0}&sortBy={1}", pageIndex, sortBy));
         }
 
-        //movies/byreleaseddate/year/month
-        [Route("movies/byreleasedate/{year:regex(\\d{4})}/{month:range(1,12)}")] 
+        //movies/releasedby/year/month
+        [Route("movies/releasedby/{year:regex(\\d{4})}/{month:range(1,12)}")] 
         public ActionResult ByReleaseDate(int year, byte month)
         {
             return Content(String.Format("Movie release month and year = {0}/{1}", month,year));
