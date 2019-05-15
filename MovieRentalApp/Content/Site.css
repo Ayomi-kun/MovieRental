@@ -1,4 +1,7 @@
-﻿body {
+﻿#box-shadow-effect{
+    box-shadow:20px 20px 50px grey;
+}
+body {
     padding-top: 50px;
     padding-bottom: 20px;
 }

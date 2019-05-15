@@ -57,7 +57,7 @@ namespace MovieRentalApp.Controllers
             }
             else
             {
-                movies = "";
+               return HttpNotFound();
             }
             return Content(movies);
         }

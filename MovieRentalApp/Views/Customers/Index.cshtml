@@ -5,11 +5,34 @@
 }
 
 <h2>Customers</h2>
-@{ var num = 0;}
 
-@foreach (var customer in Model.Customers)
+@if ( !Model.Customers.Any())
 {
-    num++;
-    <h5> @Html.ActionLink(customer.Name,"Details","Customers", new { id = num}, null)</h5>
-    
+    <p>We do not have any customer yet</p>
 }
+else
+{
+     var num = 0;
+    <div id="box-shadow-effect">
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Customers</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var customer in Model.Customers)
+                {
+                    num++;
+                    <tr>
+                        <td>@Html.ActionLink(customer.Name, "Details", "Customers", new { id = num }, null)</td>
+                    </tr>
+
+                }
+            </tbody>
+
+        </table>
+    </div>
+
+
+ }

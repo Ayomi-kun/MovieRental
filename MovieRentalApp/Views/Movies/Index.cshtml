@@ -5,10 +5,34 @@
 }
 
 <h2>Movie</h2>
-@{ var num = 0;}
-@foreach (var movie in Model.Movie)
+
+@if (!Model.Movie.Any())
 {
-    num++;
-    <h5> @Html.ActionLink(movie.Name, "Details", "Movies", new { id = num }, null)</h5>
+    <p>We do not have any movie yet</p>
+}
+else
+{
+    var num = 0;
+    <div id="box-shadow-effect">
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th> Movies</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var movie in Model.Movie)
+                {
+                    num++;
+                    <tr>
+                        <td> @Html.ActionLink(movie.Name, "Details", "Movies", new { id = num }, null)</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    
+        
+
 }
 
