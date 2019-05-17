@@ -67,3 +67,5 @@ C:\Users\Ayomikun\documents\visual studio 2015\Projects\MovieRentalApp\MovieRent
 C:\Users\Ayomikun\documents\visual studio 2015\Projects\MovieRentalApp\MovieRentalApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Ayomikun\documents\visual studio 2015\Projects\MovieRentalApp\MovieRentalApp\obj\Debug\MovieRentalApp.dll
 C:\Users\Ayomikun\documents\visual studio 2015\Projects\MovieRentalApp\MovieRentalApp\obj\Debug\MovieRentalApp.pdb
+C:\Users\Ayomikun\documents\visual studio 2015\Projects\MovieRentalApp\MovieRentalApp\obj\Debug\MovieRentalApp.Migrations.InitialModel.resources
+C:\Users\Ayomikun\documents\visual studio 2015\Projects\MovieRentalApp\MovieRentalApp\obj\Debug\MovieRentalApp.csproj.GenerateResource.Cache
