@@ -1,6 +1,12 @@
 ﻿#box-shadow-effect{
     box-shadow:20px 20px 50px grey;
 }
+
+.navbar-space{
+    height:20px ;
+    width:100%;
+    backgroung-color: #fff;
+}
 body {
     padding-top: 50px;
     padding-bottom: 20px;
