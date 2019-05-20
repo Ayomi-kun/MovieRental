@@ -69,3 +69,7 @@ C:\Users\Ayomikun\documents\visual studio 2015\Projects\MovieRentalApp\MovieRent
 C:\Users\Ayomikun\documents\visual studio 2015\Projects\MovieRentalApp\MovieRentalApp\obj\Debug\MovieRentalApp.pdb
 C:\Users\Ayomikun\documents\visual studio 2015\Projects\MovieRentalApp\MovieRentalApp\obj\Debug\MovieRentalApp.Migrations.InitialModel.resources
 C:\Users\Ayomikun\documents\visual studio 2015\Projects\MovieRentalApp\MovieRentalApp\obj\Debug\MovieRentalApp.csproj.GenerateResource.Cache
+C:\Users\Ayomikun\documents\visual studio 2015\Projects\MovieRentalApp\MovieRentalApp\obj\Debug\MovieRentalApp.Migrations.customerissubscribdedto.resources
+C:\Users\Ayomikun\documents\visual studio 2015\Projects\MovieRentalApp\MovieRentalApp\obj\Debug\MovieRentalApp.Migrations.MemebershipType.resources
+C:\Users\Ayomikun\documents\visual studio 2015\Projects\MovieRentalApp\MovieRentalApp\obj\Debug\MovieRentalApp.Migrations.AddMembershipType.resources
+C:\Users\Ayomikun\documents\visual studio 2015\Projects\MovieRentalApp\MovieRentalApp\obj\Debug\MovieRentalApp.Migrations.PopulateMembershipType.resources
