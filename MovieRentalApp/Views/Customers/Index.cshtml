@@ -1,4 +1,4 @@
-﻿@model MovieRentalApp.ViewModels.RandomMovieViewModel
+﻿@model IEnumerable<MovieRentalApp.Models.Customer>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -6,13 +6,13 @@
 
 <h2>Customers</h2>
 
-@if ( !Model.Customers.Any())
+@if ( !Model.Any())
 {
     <p>We do not have any customer yet</p>
 }
 else
 {
-     var num = 0;
+     
     <div id="box-shadow-effect">
         <table class="table table-bordered table-hover">
             <thead>
@@ -21,11 +21,11 @@ else
                 </tr>
             </thead>
             <tbody>
-                @foreach (var customer in Model.Customers)
+                @foreach (var customer in Model)
                 {
-                    num++;
+                    //num++;
                     <tr>
-                        <td>@Html.ActionLink(customer.Name, "Details", "Customers", new { id = num }, null)</td>
+                        <td>@Html.ActionLink(customer.Name, "Details", "Customers", new { id = customer.Id }, null)</td>
                     </tr>
 
                 }
