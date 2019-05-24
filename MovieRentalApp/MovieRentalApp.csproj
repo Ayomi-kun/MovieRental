@@ -209,6 +209,14 @@
     <Compile Include="Migrations\201905241426070_update existing record.Designer.cs">
       <DependentUpon>201905241426070_update existing record.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905241453087_birthday of customer.cs" />
+    <Compile Include="Migrations\201905241453087_birthday of customer.Designer.cs">
+      <DependentUpon>201905241453087_birthday of customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905241655526_birthday allow null.cs" />
+    <Compile Include="Migrations\201905241655526_birthday allow null.Designer.cs">
+      <DependentUpon>201905241655526_birthday allow null.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -360,6 +368,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201905241426070_update existing record.resx">
       <DependentUpon>201905241426070_update existing record.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905241453087_birthday of customer.resx">
+      <DependentUpon>201905241453087_birthday of customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905241655526_birthday allow null.resx">
+      <DependentUpon>201905241655526_birthday allow null.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -76,3 +76,5 @@ C:\Users\Ayomikun\documents\visual studio 2015\Projects\MovieRentalApp\MovieRent
 C:\Users\Ayomikun\documents\visual studio 2015\Projects\MovieRentalApp\MovieRentalApp\obj\Debug\MovieRentalApp.Migrations.ApplyAnnotations.resources
 C:\Users\Ayomikun\documents\visual studio 2015\Projects\MovieRentalApp\MovieRentalApp\obj\Debug\MovieRentalApp.Migrations.nametomebershiptype.resources
 C:\Users\Ayomikun\documents\visual studio 2015\Projects\MovieRentalApp\MovieRentalApp\obj\Debug\MovieRentalApp.Migrations.updateexistingrecord.resources
+C:\Users\Ayomikun\documents\visual studio 2015\Projects\MovieRentalApp\MovieRentalApp\obj\Debug\MovieRentalApp.Migrations.birthdayofcustomer.resources
+C:\Users\Ayomikun\documents\visual studio 2015\Projects\MovieRentalApp\MovieRentalApp\obj\Debug\MovieRentalApp.Migrations.birthdayallownull.resources
