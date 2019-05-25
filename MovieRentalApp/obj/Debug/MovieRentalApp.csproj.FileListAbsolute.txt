@@ -78,3 +78,4 @@ C:\Users\Ayomikun\documents\visual studio 2015\Projects\MovieRentalApp\MovieRent
 C:\Users\Ayomikun\documents\visual studio 2015\Projects\MovieRentalApp\MovieRentalApp\obj\Debug\MovieRentalApp.Migrations.updateexistingrecord.resources
 C:\Users\Ayomikun\documents\visual studio 2015\Projects\MovieRentalApp\MovieRentalApp\obj\Debug\MovieRentalApp.Migrations.birthdayofcustomer.resources
 C:\Users\Ayomikun\documents\visual studio 2015\Projects\MovieRentalApp\MovieRentalApp\obj\Debug\MovieRentalApp.Migrations.birthdayallownull.resources
+C:\Users\Ayomikun\Documents\Visual Studio 2015\Projects\MovieRentalApp\MovieRentalApp\obj\Debug\MovieRentalApp.Migrations.MovieDataset.resources
