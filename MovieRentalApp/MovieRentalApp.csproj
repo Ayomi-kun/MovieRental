@@ -221,9 +221,22 @@
     <Compile Include="Migrations\201905251054421_Movie Dataset.Designer.cs">
       <DependentUpon>201905251054421_Movie Dataset.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905251119533_genre-movie model.cs" />
+    <Compile Include="Migrations\201905251119533_genre-movie model.Designer.cs">
+      <DependentUpon>201905251119533_genre-movie model.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905251134520_fix genre model data type.cs" />
+    <Compile Include="Migrations\201905251134520_fix genre model data type.Designer.cs">
+      <DependentUpon>201905251134520_fix genre model data type.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905251136168_populate genre.cs" />
+    <Compile Include="Migrations\201905251136168_populate genre.Designer.cs">
+      <DependentUpon>201905251136168_populate genre.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -381,6 +394,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201905251054421_Movie Dataset.resx">
       <DependentUpon>201905251054421_Movie Dataset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905251119533_genre-movie model.resx">
+      <DependentUpon>201905251119533_genre-movie model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905251134520_fix genre model data type.resx">
+      <DependentUpon>201905251134520_fix genre model data type.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905251136168_populate genre.resx">
+      <DependentUpon>201905251136168_populate genre.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
