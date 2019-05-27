@@ -233,6 +233,14 @@
     <Compile Include="Migrations\201905251136168_populate genre.Designer.cs">
       <DependentUpon>201905251136168_populate genre.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905271124471_model movie additional properties.cs" />
+    <Compile Include="Migrations\201905271124471_model movie additional properties.Designer.cs">
+      <DependentUpon>201905271124471_model movie additional properties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905271134150_annotations to movies properties.cs" />
+    <Compile Include="Migrations\201905271134150_annotations to movies properties.Designer.cs">
+      <DependentUpon>201905271134150_annotations to movies properties.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -403,6 +411,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201905251136168_populate genre.resx">
       <DependentUpon>201905251136168_populate genre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905271124471_model movie additional properties.resx">
+      <DependentUpon>201905271124471_model movie additional properties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905271134150_annotations to movies properties.resx">
+      <DependentUpon>201905271134150_annotations to movies properties.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

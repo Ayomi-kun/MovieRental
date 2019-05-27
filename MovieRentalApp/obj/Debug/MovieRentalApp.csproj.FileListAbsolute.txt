@@ -82,3 +82,5 @@ C:\Users\Ayomikun\Documents\Visual Studio 2015\Projects\MovieRentalApp\MovieRent
 C:\Users\Ayomikun\Documents\Visual Studio 2015\Projects\MovieRentalApp\MovieRentalApp\obj\Debug\MovieRentalApp.Migrations.genremoviemodel.resources
 C:\Users\Ayomikun\Documents\Visual Studio 2015\Projects\MovieRentalApp\MovieRentalApp\obj\Debug\MovieRentalApp.Migrations.fixgenremodeldatatype.resources
 C:\Users\Ayomikun\Documents\Visual Studio 2015\Projects\MovieRentalApp\MovieRentalApp\obj\Debug\MovieRentalApp.Migrations.populategenre.resources
+C:\Users\Ayomikun\Documents\Visual Studio 2015\Projects\MovieRentalApp\MovieRentalApp\obj\Debug\MovieRentalApp.Migrations.modelmovieadditionalproperties.resources
+C:\Users\Ayomikun\Documents\Visual Studio 2015\Projects\MovieRentalApp\MovieRentalApp\obj\Debug\MovieRentalApp.Migrations.annotationstomoviesproperties.resources
