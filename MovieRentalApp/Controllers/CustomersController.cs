@@ -15,7 +15,7 @@ namespace MovieRentalApp.Controllers
 
         public CustomersController()
         {
-            _context = new ApplicationDbContext();
+            _context = new ApplicationDbContext();      
         }
 
         //dispose this object properly

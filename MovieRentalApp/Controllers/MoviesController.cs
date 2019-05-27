@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data.Entity;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,28 +11,40 @@ namespace MovieRentalApp.Controllers
 {
     public class MoviesController : Controller
     {
+        private ApplicationDbContext _context;
+
+        public MoviesController()
+        {
+            _context = new ApplicationDbContext();
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            _context.Dispose();
+        }
+
         // GET: Movies/
         public ActionResult Index()
         {
-            var movies = new List<Movie>
-            { new Movie { Name = "Lego Movie" },
-              new Movie {Name = "Avengers Endgame" },
-              new Movie {Name = "Titanic" },
-              new Movie {Name = "Iron Man" }
-            };
-            var ViewModel = new RandomMovieViewModel
-            {
-                Movie = movies
-        };
+
+            var movies = _context.Movies.Include(c => c.Genre).ToList();
+
+            return View(movies);
+            //var movies = new List<Movie>
+            //{ new Movie { Name = "Lego Movie" },
+            //  new Movie {Name = "Avengers Endgame" },
+            //  new Movie {Name = "Titanic" },
+            //  new Movie {Name = "Iron Man" }
+            //};
+            //var ViewModel = new RandomMovieViewModel
+            //{
+            //    Movie = movies
+            //};
 
             
-            return View(ViewModel);
+            //return View(ViewModel);
 
-            //return Content("Hello World");
-
-            //return HttpNotFound();
-
-            //return new EmptyResult();
+           
 
             //return RedirectToAction("Index", "Home", new { page =1, sortBy= "name"});
         }
