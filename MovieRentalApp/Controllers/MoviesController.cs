@@ -51,28 +51,38 @@ namespace MovieRentalApp.Controllers
         
         public ActionResult Details(int id)
         {
-            string movies;
-            if(id == 1)
+            var movie = _context.Movies.Include(c => c.Genre).SingleOrDefault(c => c.Id == id);
+            if (movie == null)
             {
-                movies = "Lego Movie";
-            }
-            else if(id == 2)
-            {
-                movies = "Avengers Endgame";
-            }
-            else if(id == 3)
-            {
-                movies = "Titanic";
-            }
-            else if(id == 4)
-            {
-                movies = "Iron man";
+                return HttpNotFound();
             }
             else
             {
-               return HttpNotFound();
+                return View(movie);
             }
-            return Content(movies);
+            
+            //string movies;
+            //if(id == 1)
+            //{
+            //    movies = "Lego Movie";
+            //}
+            //else if(id == 2)
+            //{
+            //    movies = "Avengers Endgame";
+            //}
+            //else if(id == 3)
+            //{
+            //    movies = "Titanic";
+            //}
+            //else if(id == 4)
+            //{
+            //    movies = "Iron man";
+            //}
+            //else
+            //{
+            //   return HttpNotFound();
+            //}
+
         }
         //movies/edit?id
         public ActionResult Edit(int id)
