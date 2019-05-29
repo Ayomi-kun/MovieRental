@@ -46,6 +46,10 @@ namespace MovieRentalApp.Controllers
             //return View(ViewModel);
             
         }
+        public ActionResult New()
+        {
+            return View();
+        }
         public ActionResult Details(int id)
         {
             var customer = _context.Customers.Include(c => c.MembershipType).SingleOrDefault(c => c.Id == id);
