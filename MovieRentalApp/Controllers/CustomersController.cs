@@ -48,7 +48,11 @@ namespace MovieRentalApp.Controllers
         }
         public ActionResult New()
         {
-            return View();
+            var membershipType = _context.MembershipTypes.ToList();
+            var viewModel = new NewCustomerViewModel {
+                MembershipTypes = membershipType
+            };
+            return View(viewModel);
         }
         public ActionResult Details(int id)
         {
