@@ -49,10 +49,10 @@ namespace MovieRentalApp.Controllers
         public ActionResult New()
         {
             var membershipType = _context.MembershipTypes.ToList();
-            var viewModel = new NewCustomerViewModel {
+            var viewModel = new CreateFormViewModel {
                 MembershipTypes = membershipType
             };
-            return View(viewModel);
+            return View("CustomerForm", viewModel);
         }
         
         [HttpPost]    
@@ -61,6 +61,26 @@ namespace MovieRentalApp.Controllers
             _context.Customers.Add(customer);
             _context.SaveChanges();
             return RedirectToAction("Index","Customers");
+        }
+
+        public ActionResult Edit(int id)
+        {
+            var customer = _context.Customers.SingleOrDefault(c => c.Id == id);
+
+            if(customer == null)
+            {
+                return HttpNotFound();
+            }
+            else
+            {
+                var ViewModel = new CreateFormViewModel
+                {
+                    Customer = customer,
+                    MembershipTypes = _context.MembershipTypes.ToList()
+                };
+                return View("CustomerForm", ViewModel);
+            }
+            
         }
         public ActionResult Details(int id)
         {
