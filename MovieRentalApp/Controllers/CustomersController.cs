@@ -56,9 +56,24 @@ namespace MovieRentalApp.Controllers
         }
         
         [HttpPost]    
-        public ActionResult Create(Customer customer)
+        public ActionResult Save(Customer customer)
         {
-            _context.Customers.Add(customer);
+            if(customer.Id == 0)
+            {
+                _context.Customers.Add(customer);
+            }
+            else
+            {
+                var customerInDb = _context.Customers.Single(c => c.Id == customer.Id);
+                //TryUpdateModel(customerInDb);
+
+                //use the below method if you want to restrict the updated properties, just list the ones you want to update
+                customerInDb.Name = customer.Name;
+                customerInDb.Birthday = customer.Birthday;
+                customerInDb.MembershipTypeID = customer.MembershipTypeID;
+                customerInDb.IsSubscribedToNewsletter = customer.IsSubscribedToNewsletter;
+            }
+
             _context.SaveChanges();
             return RedirectToAction("Index","Customers");
         }
