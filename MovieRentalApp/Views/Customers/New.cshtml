@@ -15,7 +15,7 @@
     </div>
 
     <div class="form-group">
-        <label for="Customer.Birthday">Date of Birth</label>
+        @Html.LabelFor(c => c.Customer.Birthday)
         @Html.TextBoxFor(c => c.Customer.Birthday, new { @class = "form-control" })
         
     </div>
@@ -27,8 +27,9 @@
     </div>
 
     <div class="form-group">
-        <label for="Customer.MembershipTypeID">Membership Types</label>
+        @Html.LabelFor(c => c.Customer.MembershipTypeID)
         @Html.DropDownListFor(c => c.Customer.MembershipTypeID, new SelectList(Model.MembershipTypes, "Id", "Name"), "Select Memebrship Type", new { @class = "form-control" })
+
 
     </div>
 }
