@@ -12,12 +12,19 @@ namespace MovieRentalApp.Models
         [Required]
         public string Name { get; set; }
         public Genre Genre { get; set; }
+
+        [Display(Name = "Genre")]
         [Required]
         public byte GenreID { get; set; }
+
+        [Display(Name ="Released Date")]
         [Required]
         public DateTime ReleasedDate { get; set; }
+        
         [Required]
         public DateTime DateAdded { get; set; }
+
+        [Display(Name = "Number in stock")]
         [Required]
         public byte NumberInStock { get; set; }
        
