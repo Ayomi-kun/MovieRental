@@ -59,9 +59,23 @@ namespace MovieRentalApp.Controllers
         }
 
         [HttpPost]
-        public ActionResult Save()
+        public ActionResult Save(Movie movie)
         {
-            return View();
+            if (movie.Id == 0)
+            {
+                _context.Movies.Add(movie);
+            }
+            else
+            {
+                var movieInDb = _context.Movies.Single(c => c.Id == movie.Id);
+                movieInDb.Name = movie.Name;
+                movieInDb.ReleasedDate = movie.ReleasedDate;
+                movieInDb.GenreID = movie.GenreID;
+                movieInDb.NumberInStock = movie.NumberInStock;
+            }
+
+            _context.SaveChanges();
+            return RedirectToAction("Index" , "Movies");
         }
         public ActionResult Details(int id)
         {
@@ -101,7 +115,21 @@ namespace MovieRentalApp.Controllers
         //movies/edit?id
         public ActionResult Edit(int id)
         {
-            return Content("id =" + id);
+            var movie = _context.Movies.SingleOrDefault(c => c.Id == id);
+
+            if (movie == null)
+            {
+                return HttpNotFound();
+            }
+            else
+            {
+                var viewModel = new CreateFormViewModel
+                {
+                    Movie = movie,
+                    Genre = _context.Genre.ToList()
+                };
+                return View("MovieForm", viewModel);
+            }
         }
 
         //Movies/page
