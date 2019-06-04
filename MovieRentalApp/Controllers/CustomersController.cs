@@ -24,7 +24,7 @@ namespace MovieRentalApp.Controllers
             _context.Dispose();
         }
 
-        // GET: Customers
+        // GET: Customers   
         public ViewResult Index()
         {
 
@@ -52,7 +52,7 @@ namespace MovieRentalApp.Controllers
             var viewModel = new CreateFormViewModel {
                 MembershipTypes = membershipType
             };
-            return View("CustomerForm", viewModel);
+            return View("CustomerForm", viewModel); 
         }
         
         [HttpPost]    
@@ -71,7 +71,7 @@ namespace MovieRentalApp.Controllers
                 customerInDb.Name = customer.Name;
                 customerInDb.Birthday = customer.Birthday;
                 customerInDb.MembershipTypeID = customer.MembershipTypeID;
-                customerInDb.IsSubscribedToNewsletter = customer.IsSubscribedToNewsletter;
+                customerInDb.IsSubscribedToNewsletter = customer.IsSubscribedToNewsletter;  
             }
 
             _context.SaveChanges();

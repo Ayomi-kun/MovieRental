@@ -6,6 +6,10 @@
 
 <h2>Movies</h2>
 
+
+<button type="button" class="btn btn-info"> @Html.ActionLink("New Movie", "New", "Movies") </button>
+<br />
+
 @if (!Model.Any())
 {
     <p>We dont have any movie yet</p>

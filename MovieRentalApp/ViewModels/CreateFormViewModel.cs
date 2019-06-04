@@ -9,5 +9,8 @@ namespace MovieRentalApp.ViewModels
     {
         public IEnumerable<MembershipType> MembershipTypes { get; set; }
         public Customer Customer { get; set; }
+
+        public IEnumerable<Genre> Genre { get; set; }
+        public Movie Movie { get; set; }
     }
 }

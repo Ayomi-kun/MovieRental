@@ -48,7 +48,21 @@ namespace MovieRentalApp.Controllers
 
             //return RedirectToAction("Index", "Home", new { page =1, sortBy= "name"});
         }
-        
+        public ActionResult New()
+        {
+            var genre = _context.Genre.ToList();
+            var viewModel = new CreateFormViewModel
+            {
+                Genre = genre
+            };
+            return View("MovieForm",viewModel);
+        }
+
+        [HttpPost]
+        public ActionResult Save()
+        {
+            return View();
+        }
         public ActionResult Details(int id)
         {
             var movie = _context.Movies.Include(c => c.Genre).SingleOrDefault(c => c.Id == id);
