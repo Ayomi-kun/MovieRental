@@ -241,6 +241,10 @@
     <Compile Include="Migrations\201905271134150_annotations to movies properties.Designer.cs">
       <DependentUpon>201905271134150_annotations to movies properties.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906062019095_removed required annotation from movie class.cs" />
+    <Compile Include="Migrations\201906062019095_removed required annotation from movie class.Designer.cs">
+      <DependentUpon>201906062019095_removed required annotation from movie class.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -421,6 +425,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201905271134150_annotations to movies properties.resx">
       <DependentUpon>201905271134150_annotations to movies properties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906062019095_removed required annotation from movie class.resx">
+      <DependentUpon>201906062019095_removed required annotation from movie class.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

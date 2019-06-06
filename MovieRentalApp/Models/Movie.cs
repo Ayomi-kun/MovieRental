@@ -21,7 +21,7 @@ namespace MovieRentalApp.Models
         [Required]
         public DateTime ReleasedDate { get; set; }
         
-        [Required]
+        
         public DateTime DateAdded { get; set; }
 
         [Display(Name = "Number in stock")]

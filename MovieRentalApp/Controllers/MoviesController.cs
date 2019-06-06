@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.Mvc;
 using MovieRentalApp.Models;
 using MovieRentalApp.ViewModels;
+using System.Data.Entity.Infrastructure;
 
 namespace MovieRentalApp.Controllers
 {
@@ -74,7 +75,16 @@ namespace MovieRentalApp.Controllers
                 movieInDb.NumberInStock = movie.NumberInStock;
             }
 
-            _context.SaveChanges();
+            
+
+            try
+            {
+                _context.SaveChanges();
+            }
+            catch (DbUpdateException e)
+            {
+                Console.WriteLine(e);
+            }
             return RedirectToAction("Index" , "Movies");
         }
         public ActionResult Details(int id)
