@@ -75,16 +75,12 @@ namespace MovieRentalApp.Controllers
                 movieInDb.NumberInStock = movie.NumberInStock;
             }
 
-            
-
-            try
-            {
                 _context.SaveChanges();
-            }
-            catch (DbUpdateException e)
-            {
-                Console.WriteLine(e);
-            }
+            
+            //catch (DbUpdateException e)
+            //{
+            //    Console.WriteLine(e);
+            //}
             return RedirectToAction("Index" , "Movies");
         }
         public ActionResult Details(int id)
