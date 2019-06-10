@@ -6,7 +6,7 @@
 }
 
 @{
-   
+
     if (Model.Customer == null)
     {
         <h2>New Customer</h2>
@@ -22,21 +22,22 @@
 {
     <div class="form-group">
         @Html.LabelFor(c => c.Customer.Name)
-        @Html.TextBoxFor(c => c.Customer.Name, new { @class = "form-control"})
+        @Html.TextBoxFor(c => c.Customer.Name, new { @class = "form-control" })
         @Html.ValidationMessageFor(c => c.Customer.Name)
     </div>
 
     <div class="form-group">
         @Html.LabelFor(c => c.Customer.Birthday)
         @Html.TextBoxFor(c => c.Customer.Birthday, "{0:d MMM yyyy}", new { @class = "form-control" })
-        
+
     </div>
 
-    
+
 
     <div class="form-group">
         @Html.LabelFor(c => c.Customer.MembershipTypeID)
         @Html.DropDownListFor(c => c.Customer.MembershipTypeID, new SelectList(Model.MembershipTypes, "Id", "Name"), "Select Memebrship Type", new { @class = "form-control" })
+        @Html.ValidationMessageFor(c => c.Customer.MembershipTypeID)
     </div>
 
     <div class="custom-checkbox">
