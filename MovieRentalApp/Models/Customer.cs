@@ -10,7 +10,7 @@ namespace MovieRentalApp.Models
     {
         public int Id { get; set; }
 
-        [Required]
+        [Required (ErrorMessage= " Please enter the Customer's name")]
         [StringLength(255)]
         public string Name { get; set; }
 
