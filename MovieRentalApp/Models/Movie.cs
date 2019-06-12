@@ -9,7 +9,7 @@ namespace MovieRentalApp.Models
     public class Movie
     {
         public int Id { get; set; }
-        [Required]
+        [Required (ErrorMessage = "Please Enter the Name of the Movie")]
         public string Name { get; set; }
         public Genre Genre { get; set; }
 

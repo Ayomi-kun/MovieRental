@@ -22,6 +22,7 @@ namespace MovieRentalApp.Models
         public byte MembershipTypeID { get; set; }
 
         [Display(Name = "Date of Birth")]
+        [Min18YearsIfAMember]
         public DateTime? Birthday { get; set; }
     }
 }
