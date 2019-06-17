@@ -86,3 +86,4 @@ C:\Users\Ayomikun\Documents\Visual Studio 2015\Projects\MovieRentalApp\MovieRent
 C:\Users\Ayomikun\Documents\Visual Studio 2015\Projects\MovieRentalApp\MovieRentalApp\obj\Debug\MovieRentalApp.Migrations.annotationstomoviesproperties.resources
 C:\Users\Ayomikun\documents\visual studio 2015\Projects\MovieRentalApp\MovieRentalApp\obj\Debug\MovieRentalApp.Migrations.removedrequiredannotationfrommovieclass.resources
 C:\Users\Ayomikun\documents\visual studio 2015\Projects\MovieRentalApp\MovieRentalApp\obj\Debug\MovieRentalApp.Migrations.datetimenullable.resources
+C:\Users\Ayomikun\documents\visual studio 2015\Projects\MovieRentalApp\MovieRentalApp\obj\Debug\MovieRentalApp.Migrations.moviemodelvalidation.resources

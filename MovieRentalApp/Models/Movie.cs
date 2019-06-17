@@ -9,6 +9,7 @@ namespace MovieRentalApp.Models
     public class Movie
     {
         public int Id { get; set; }
+
         [Required (ErrorMessage = "Please Enter the Name of the Movie")]
         public string Name { get; set; }
         public Genre Genre { get; set; }
@@ -18,15 +19,17 @@ namespace MovieRentalApp.Models
         public byte GenreID { get; set; }
 
         [Display(Name ="Released Date")]
-        
-        public DateTime? ReleasedDate { get; set; }
+        [Required]
+        public DateTime ReleasedDate { get; set; }
         
         
         public DateTime? DateAdded { get; set; }
 
         [Display(Name = "Number in stock")]
         [Required]
+        [Range(1,20)]
         public byte NumberInStock { get; set; }
-       
+        
+               
     }
 }

@@ -249,6 +249,10 @@
     <Compile Include="Migrations\201906091608096_datetime nullable.Designer.cs">
       <DependentUpon>201906091608096_datetime nullable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906171111467_ movie model validation.cs" />
+    <Compile Include="Migrations\201906171111467_ movie model validation.Designer.cs">
+      <DependentUpon>201906171111467_ movie model validation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -436,6 +440,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906091608096_datetime nullable.resx">
       <DependentUpon>201906091608096_datetime nullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906171111467_ movie model validation.resx">
+      <DependentUpon>201906171111467_ movie model validation.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
