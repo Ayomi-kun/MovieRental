@@ -7,8 +7,9 @@
 <h2>Movies</h2>
 
 
-<button type="button" class="btn btn-info"> @Html.ActionLink("New Movie", "New", "Movies") </button>
-<br />
+<button style="margin-bottom :15px;" type="button" class="btn btn-info"> @Html.ActionLink("New Movie", "New", "Movies", new { style = "color:white; "}) </button>
+
+
 
 @if (!Model.Any())
 {
